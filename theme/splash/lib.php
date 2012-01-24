@@ -16,15 +16,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Library functions for the Splash theme
+ * Library functions for the splash theme
  *
  * @package   theme_splash
- * @copyright 2010 Caroline Kennedy of Synergy Learning
+ * @copyright 2011 Synergy Learning
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
- * Splash theme post process function for CSS
+ * splash theme post process function for CSS
  * @param string $css Incoming CSS to process
  * @param stdClass $theme The theme object
  * @return string The processed CSS
@@ -87,6 +87,7 @@ function splash_set_customcss($css, $customcss) {
     $css = str_replace($tag, $replacement, $css);
     return $css;
 }
+
 
 /**
  * Adds the JavaScript for the colour switcher to the page.

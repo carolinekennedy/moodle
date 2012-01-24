@@ -20,7 +20,7 @@
  * Settings for the splash theme
  *
  * @package   theme_splash
- * @copyright 2010 Caroline Kennedy of Synergy Learning
+ * @copyright 2011 Caroline Kennedy - Synergy Learning
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
  

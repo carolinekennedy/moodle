@@ -94,17 +94,20 @@ echo $OUTPUT->doctype() ?>
             <?php } // End of if ($hasheading)?>
                 <!-- DROP DOWN MENU -->
                 <div class="clearer"></div>
-                <div id="dropdownmenu">
+                
                     <?php if ($hascustommenu) { ?>
+                    <div id="moodlemenu">
                     <div id="custommenu"><?php echo $custommenu; ?></div>
                     <?php } ?>
+                       </div>
                     <div class="navbar">
                         <div class="wrapper clearfix">
                             <div class="breadcrumb"><?php if ($hasnavbar) echo $OUTPUT->navbar(); ?></div>
                             <div class="navbutton"> <?php echo $PAGE->button; ?></div>
                         </div>
                     </div>
-                </div>
+                 
+                
                 <!-- END DROP DOWN MENU -->
             </div>
         </div>
