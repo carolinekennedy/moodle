@@ -41,11 +41,14 @@ $THEME->parents = array(
 
 
 $THEME->sheets = array(
-    'sl',
-    'green',
-    'blue',
-    'orange',
-    'ie',
+   'core' ,    /** Must come first**/
+   'sl' ,
+   'menus' ,
+   'green' ,
+   'blue' ,
+   'orange' ,
+   'ie' ,
+   
 );
 
 ////////////////////////////////////////////////////

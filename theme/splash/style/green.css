@@ -2,7 +2,7 @@
 **
 ** Theme name: Splash
 ** Creation Date: 30/06/09
-** Author: Synergy Learning
+** Author: Caroline Kennedy - Synergy Learning
 ** Author URI: http://synergylearning.com
 **
 *********************************************************/
@@ -32,6 +32,16 @@ body.splash-green {                /* Define margins and background colour/image
     color: #446e4c;
 }
 
+.splash-green #region-main h1 {color:#446e4c; font-size:1.8em; font-weight:normal; padding:10px 0; line-height:1.8em;}
+.splash-green #region-main h2 {color:#333; font-size:1.6em; font-weight:normal; padding:10px 0; line-height:1.6em; padding:3px; margin: 0 !important; border-bottom:1px solid #d1cece;}
+.splash-green #region-main h3 {color:#446e4c; font-size:1.4em; font-weight:normal; padding:10px 0; line-height:1.4em;}
+.splash-green #region-main h4 {color:#446e4c; font-size:1.2em; font-weight:bold; padding:10px 0; line-height:1.2em;}
+.splash-green #region-main h5 {color:#333; font-size:1.1em; font-weight:bold; padding:10px 0; line-height:1em; text-decoration:italic;}
+.splash-green #region-main h6 {color:#446e4c; font-size:1.1em; font-weight:bold; padding:10px 0; line-height:1em;}
+
+.splash-green #region-main .coursebox h3{font-size:1.0em !important;}
+
+
 /* Header 
 -----------------------*/
 .splash-green #page-header {            /* Set height for header */
@@ -39,31 +49,58 @@ body.splash-green {                /* Define margins and background colour/image
     padding: 0;
     margin:0;
     color: #fff;
-    height: 308px;
+    height: 315px;
     background: url([[pix:theme|pageheaderbggreen]]) top center no-repeat;
 }
 
 .splash-green #logobox{  /* holder background for logo*/
     height: 185px;
-    width: 252px;
+    width: 200px;
     margin: auto;
     text-align: center;
     background: url([[pix:theme|lbgv2green]]) no-repeat;
     float: left;
+     padding: 0 10px 0 10px;
 }
 
 .splash-green #colourswitcher p{
     color:#446e4c;
 }
 
+.headermain  {margin:0; padding:0px; float:left;}
+.langmenu{
+	text-align: left;
+}
+
+.headermain.inside{
+	font-size: 1.0em;
+	margin-top: 45px;
+	margin-left: 10px;
+	color: #000;
+}
+
+/*Navbar *----*/
+
+.splash-green .navbar {padding:0 10px; background:url([[pix:theme|navbarbg]]) left repeat-x;  border:none; clear:both; width:100; margin:0; padding-top:8px; color:#000;}
+.splash-green .navbar .breadcrumb {margin:0; padding:10px 0 10px 0px; font-size:0.9em;}
+.splash-green .navbar .breadcrumb ul{display:inline; padding-left:0px;}
+.splash-green .navbar .breadcrumb a {color:#cc000; text-decoration:underline;}
+.splash-green .navbar .breadcrumb a:hover {color:#000; text-decoration:underline;}
+.splash-green .navbar .arrow {color:#446e4c;}
+.splash-green .navbar .navbutton {margin:0; padding:5px 0 0 0;}
+.splash-green .navbutton input[type=submit] {background:#000; color: #fff; padding:3px 5px 3px 5px; border: none; margin: 0; cursor:pointer;}
+.splash-green .navbutton input[type=submit]:hover {background:#8e8e8e; color: #fff; border: none;}
+
+
+
 
 /* Custom Menu
 -----------------------*/
-.splash-green #custommenu .yui3-menu-content ul.first-of-type li{
+//.splash-green #custommenu .yui3-menu-content ul.first-of-type li{
     border-right: 1px solid #d5e1d7;
 }
 
-.splash-green #custommenu div.yui3-menu.custom_menu_submenu .yui3-menu-content{
+//.splash-green #custommenu div.yui3-menu.custom_menu_submenu .yui3-menu-content{
     background:#446e4c;
     border:1px solid #fff;
     color: #fff;
@@ -71,8 +108,12 @@ body.splash-green {                /* Define margins and background colour/image
 
 /* Content
 -----------------------*/
+.splash-green .course-content ul.topics li.section .left {font-size:1.2em; color:#446e4c; font-weight:bold; padding:10px 0 0 0;} 
+
+.splash-green .mform fieldset legend {font-size:1.3em; color:#446e4c;}
+
 .splash-green ul.topics li#section-0, ul.weeks li#section-0 {
-    background: #386c4c;
+    //background: #386c4c;
     border: 1px solid #ccc;
 
 }
@@ -82,14 +123,77 @@ body.splash-green {                /* Define margins and background colour/image
     border-bottom: 1px dashed #dae0dc;
 }
 
-/* Sideblocks
------------------------*/
-.splash-green #region-pre .block .header,  /*-- right block header   --*/
-.splash-green #region-post .block .header {  /*-- right block header   --*/
-    background: url([[pix:theme|sbheaderbg2green]]) center no-repeat;
-    padding: 12px 5px 5px;
-    color: #fff;
+
+.splash-green #categoryquestions tr th{background:#446e4c; border-bottom:none !important; color:#fff;}
+
+
+/*quiz navigation */
+.splash-green .path-mod-quiz .qnbutton {background:#446e4c; color:#fff;}
+.splash-green .path-mod-quiz .qnbutton.open {background:#446e4c;}
+.splash-green .path-mod-quiz .qnbutton.thispage {border-color:#ff9933;}
+
+/**********************************
+Sideblocks
+**********************************/
+
+.splash-green .block {margin-bottom: 20px; border: none; width:210px !important;}
+.splash-green .block hr { display: none;}
+
+.splash-green .searchform {padding-top: 10px;}
+.splash-green .block-region {background: #fff;}
+
+.splash-green .block-region .block .header {background: url([[pix:theme|sbheaderbg2green]]) top center no-repeat #f2f2f2;}
+
+.splash-green .block .header .block_action { /*--  show/hide --*/
+	padding:15px 10px 0 0;}
+
+.splash-green .block-region .block .header h2{  /*--  block text --*/
+    color: #333; padding: 15px 0px 10px 10px; margin:0; font-size: 1.2em;}
+	
+.splash-green .block-region .commands {/*--  editing options --*/
+	padding:5px 0 0 10px; margin:0; clear:both;   background: #f2f2f2; border:none;}
+	
+	.splash-green .block-region .block .content .commands {/*--  editing options with in block--*/
+	padding:5px 0 0 10px; margin:0; clear:both;  background: #f2f2f2; border:none;}
+	
+	.splash-green .block .header .commands {
+	    margin-left: 0px;
+	}
+
+.splash-green .block-region .block .content {  /*--  block content   --*/
+    background: #f2f2f2;
+    padding: 10px; }
+
+/**********************************
+Sideblocks - tree navs
+**********************************/
+.splash-green .tree_item {  /* tree item seperator for sideblocks */
+    border-bottom: #ddd 1px solid; padding:5px;}
+	
+	
+.splash-green .block_navigation .block_tree li.depth_2 ul {padding-left:8px;}
+
+
+.splash-green .unlist, .splash-green .unlist li, .splash-green .inline-list, .inline-list li, .splash-green .block .list, .splash-green .block .list li, .splash-green .sitetopic .section li, .splash-green .course-content .section li.activity, .splash-green .tabtree li {
+	padding-bottom: 5px;
 }
+
+/**********************************
+Sideblock Calendar
+**********************************/
+.splash-green .minicalendar {background:none; font-size:1em;}
+.splash-green .minicalendar td, .minicalendar th {border:none; padding:5px 0 !important;}
+.splash-green .minicalendar th {font-weight:bold;}
+.splash-green .block .minicalendar td.weekend {color:#666;}
+
+/**********************************
+Sideblock My Profile
+**********************************/
+
+.splash-green .block-region .block_myprofile .fullname {clear:both; font-size:1.2em; text-align:center; padding-bottom:10px;}
+.splash-green .block_myprofile img.profilepicture {margin-left:50px;}
+
+
 
 /* Mini Calendar
 ------------------------*/
@@ -99,10 +203,10 @@ body.splash-green {                /* Define margins and background colour/image
 
 /* Forum
 ------------------------*/
-.splash-green .forumpost .topic .subject,
-.path-blog.splash-green .forumpost .subject a,
-.path-blog.splash-green .forumpost .subject a:link,
-.path-blog.splash-green .forumpost .subject a:visited {    /* forum subject section inside topic header */
+//.splash-green .forumpost .topic .subject,
+//.path-blog.splash-green .forumpost .subject a,
+//.path-blog.splash-green .forumpost .subject a:link,
+//.path-blog.splash-green .forumpost .subject a:visited {    /* forum subject section inside topic header */
     font-weight: bold;
     font-size: 1.1em;
     padding-left: 5px;

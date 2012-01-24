@@ -2,10 +2,11 @@
 **
 ** Theme name: Splash
 ** Creation Date: 30/06/09
-** Author: Synergy Learning
+** Author: Caroline Kennedy - Synergy Learning
 ** Author URI: http://synergylearning.com
 **
 *********************************************************/
+
 
 /* Global 
 ------------------------*/
@@ -41,33 +42,67 @@ body.splash-blue {                /* Define margins and background colour/image 
     padding: 0;
     margin:0;
     color: #fff;
-    height: 308px;
+    height: 315px;
     background: url([[pix:theme|pageheaderbgblue]]) top center no-repeat;
 
 }
 
 .splash-blue #logobox{  /* holder background for logo*/
     height: 185px;
-    width: 252px;
+    width: 200px;
     margin: auto;
     text-align: center;
     background: url([[pix:theme|lbgv2blue]]) no-repeat;
     float: left;
+    padding: 0 10px 0 10px;
 }
 
 
 .splash-blue #colourswitcher p{
-    color:#3d6276
+    color:#3d6276;
 }
 
+.headermain  {margin:0; padding:0px; float:left;}
+.langmenu{
+	text-align: left;
+}
+
+.headermain.inside{
+	font-size: 1.0em;
+	margin-top: 45px;
+	margin-left: 10px;
+	color: #000;
+}
+
+.splash-blue #region-main h1 {color:#3d6276; font-size:1.8em; font-weight:normal; padding:10px 0; line-height:1.8em;}
+.splash-blue #region-main h2 {color:#333; font-size:1.6em; font-weight:normal; padding:10px 0; line-height:1.6em; padding:3px; margin: 0 !important; border-bottom:1px solid #d1cece;}
+.splash-blue #region-main h3 {color:#3d6276; font-size:1.4em; font-weight:normal; padding:10px 0; line-height:1.4em;}
+.splash-blue #region-main h4 {color:#3d6276; font-size:1.2em; font-weight:bold; padding:10px 0; line-height:1.2em;}
+.splash-blue #region-main h5 {color:#333; font-size:1.1em; font-weight:bold; padding:10px 0; line-height:1em; text-decoration:italic;}
+.splash-blue #region-main h6 {color:#3d6276; font-size:1.1em; font-weight:bold; padding:10px 0; line-height:1em;}
+
+
+/*Navbar *----*/
+
+.splash-blue .navbar {padding:0 10px; background:url([[pix:theme|navbarbg]]) left repeat-x;  border:none; clear:both; width:100; margin:0; padding-top:8px; color:#000;}
+.splash-blue .navbar .breadcrumb {margin:0; padding:10px 0 10px 0px; font-size:0.9em;}
+.splash-blue .navbar .breadcrumb ul{display:inline; padding-left:0px;}
+.splash-blue .navbar .breadcrumb a {color:#cc000; text-decoration:underline;}
+.splash-blue .navbar .breadcrumb a:hover {color:#000; text-decoration:underline;}
+.splash-blue .navbar .arrow {color:#3d6276;}
+.splash-blue .navbar .navbutton {margin:0; padding:5px 0 0 0;}
+.splash-blue .navbutton input[type=submit] {background:#000; color: #fff; padding:3px 5px 3px 5px; border: none; margin: 0; cursor:pointer;}
+.splash-blue .navbutton input[type=submit]:hover {background:#8e8e8e; color: #fff; border: none;}
+
+.splash-blue #region-main .coursebox h3{font-size:1.0em !important;}
 
 /* Custom Menu
 -----------------------*/
-.splash-blue #custommenu .yui3-menu-content ul.first-of-type li{
+//.splash-blue #custommenu .yui3-menu-content ul.first-of-type li{
     border-right: 1px solid #bfced7;
 }
 
-.splash-blue #custommenu div.yui3-menu.custom_menu_submenu .yui3-menu-content{
+//.splash-blue #custommenu div.yui3-menu.custom_menu_submenu .yui3-menu-content{
     background:#3d6276;
     border:1px solid #fff;
     color: #fff;
@@ -75,6 +110,9 @@ body.splash-blue {                /* Define margins and background colour/image 
 
 /* Content
 -----------------------*/
+.splash-blue .course-content ul.topics li.section .left {font-size:1.2em; color:#3d6276; font-weight:bold; padding:10px 0 0 0;}
+
+.splash-blue .mform fieldset legend {font-size:1.3em; color:#3d6276;}
 
 .splash-blue .coursebox{
     padding-left:5px;
@@ -82,19 +120,84 @@ body.splash-blue {                /* Define margins and background colour/image 
 }
 
 .splash-blue ul.topics li#section-0, ul.weeks li#section-0 {
-    background: #386377;
+    //background: #386377;
     border: 1px solid #ccc;
 }
 
-/* Sideblocks
------------------------*/
 
-.splash-blue #region-pre .block .header,
-.splash-blue #region-post .block .header {  /*-- right block header   --*/
-    background: url([[pix:theme|sbheaderbg2blue]]) center no-repeat;
-    padding: 12px 5px 5px;
-    color: #fff;
+.splash-blue #categoryquestions tr th{background:#3d6276; border-bottom:none !important; color:#fff;}
+
+
+
+/*quiz navigation */
+.splash-blue .path-mod-quiz .qnbutton {background:#3d6276; color:#fff;}
+.splash-blue .path-mod-quiz .qnbutton.open {background:#3d6276;}
+.splash-blue .path-mod-quiz .qnbutton.thispage {border-color:#ff9933;}
+
+
+
+/**********************************
+Sideblocks
+**********************************/
+
+.splash-blue .block {margin-bottom: 20px; border: none; width:210px !important;}
+.splash-blue .block hr { display: none;}
+
+.splash-blue .searchform {padding-top: 10px;}
+.splash-blue .block-region {background: #fff;}
+
+.splash-blue .block-region .block .header {background: url([[pix:theme|sbheaderbg2blue]]) top center no-repeat #f2f2f2;}
+
+.splash-blue .block .header .block_action { /*--  show/hide --*/
+	padding:15px 10px 0 0;}
+
+.splash-blue .block-region .block .header h2{  /*--  block text --*/
+    color: #333; padding: 15px 0px 10px 10px; margin:0; font-size: 1.2em;}
+	
+.splash-blue .block-region .commands {/*--  editing options --*/
+	padding:5px 0 0 10px; margin:0; clear:both;   background: #f2f2f2; border:none;}
+	
+	.block-region .block .content .commands {/*--  editing options with in block--*/
+	padding:5px 0 0 10px; margin:0; clear:both;  background: #f2f2f2; border:none;}
+	
+	.block .header .commands {
+	    margin-left: 0px;
+	}
+
+.splash-blue .block-region .block .content {  /*--  block content   --*/
+    background: #f2f2f2;
+    padding: 10px; }
+
+/**********************************
+Sideblocks - tree navs
+**********************************/
+.splash-blue .tree_item {  /* tree item seperator for sideblocks */
+    border-bottom: #ddd 1px solid; padding:5px;}
+	
+	
+.splash-blue .block_navigation .block_tree li.depth_2 ul {padding-left:8px;}
+
+
+.splash-blue .unlist, .splash-blue .unlist li, .splash-blue .inline-list, .splash-blue .inline-list li, .splash-blue .block .list, .splash-blue .block .list li, .splash-blue .sitetopic .section li, .splash-blue .course-content .section li.activity, .splash-blue .tabtree li {
+	padding-bottom: 5px;
 }
+
+/**********************************
+Sideblock Calendar
+**********************************/
+.splash-blue .minicalendar {background:none; font-size:1em;}
+.splash-blue .minicalendar td, .minicalendar th {border:none; padding:5px 0 !important;}
+.splash-blue .minicalendar th {font-weight:bold;}
+.splash-blue .block .minicalendar td.weekend {color:#666;}
+
+/**********************************
+Sideblock My Profile
+**********************************/
+
+.block-region .block_myprofile .fullname {clear:both; font-size:1.2em; text-align:center; padding-bottom:10px;}
+.block_myprofile img.profilepicture {margin-left:50px;}
+
+
 
 /* Mini Calendar
 ------------------------*/
@@ -107,10 +210,10 @@ body.splash-blue {                /* Define margins and background colour/image 
 /* Forum
 ------------------------*/
 
-.splash-blue .forumpost .topic .subject,
-.path-blog.splash-blue .forumpost .subject a,
-.path-blog.splash-blue .forumpost .subject a:link,
-.path-blog.splash-blue .forumpost .subject a:visited {    /* forum subject section inside topic header */
+//.splash-blue .forumpost .topic .subject,
+//.path-blog.splash-blue .forumpost .subject a,
+//.path-blog.splash-blue .forumpost .subject a:link,
+//.path-blog.splash-blue .forumpost .subject a:visited {    /* forum subject section inside topic header */
     font-weight: bold;
     font-size: 1.1em;
     padding-left: 5px;
